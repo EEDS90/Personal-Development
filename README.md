@@ -127,9 +127,11 @@ src
 
 ## Post-MVP
 
-Authentication for the Cork board components***
+Authentication for the Cork board components
 Add more personal developmenet content
 CSS the page for better user experience
+
+***
 
 ## Code Showcase
 
