@@ -58,7 +58,6 @@ Client (Front End)
 # Wireframes
 [wireframes](https://whimsical.com/personal-development-N1SwNNov79JumBxbL7oPac)
 [flowchart](https://whimsical.com/personal-development-flowchart-3YAyMsimdfHDF76i79x4SJ)
-[draw.io](https://drive.google.com/file/d/1BX9k_1iGIckYufYBict2bPq5WYQC_Loy/view?usp=sharing)
 
 #### Component Hierarchy
 
@@ -120,7 +119,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+[draw.io](https://drive.google.com/file/d/1BX9k_1iGIckYufYBict2bPq5WYQC_Loy/view?usp=sharing)
 
 <br>
 
@@ -128,9 +127,9 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
-***
+Authentication for the Cork board components***
+Add more personal developmenet content
+CSS the page for better user experience
 
 ## Code Showcase
 
