@@ -127,9 +127,9 @@ src
 
 ## Post-MVP
 
-1. Authentication for the Cork board components
-2. Add more personal developmenet content
-3. CSS the page for better user experience
+- Authentication for the Cork board components
+- Add more personal developmenet content
+- CSS the page for better user experience
 
 ***
 
