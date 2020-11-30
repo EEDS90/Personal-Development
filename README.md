@@ -39,14 +39,13 @@ This app  will also allow your peers to anonymously post a comment response to t
 What do you really think about me?
 And how can I improve?
 
-Libraries and Dependencies
+# Libraries and Dependencies
 
-Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 Library	Description
-React	Lorem ipsum dolor sit amet, consectetur.
-React Router	Lorem ipsum dolor sit amet, consectetur.
-React SemanticUI	Lorem ipsum dolor sit amet, consectetur.
-Express	Lorem ipsum dolor sit amet, consectetur.
+React	Lorem ipsum dolor sit amet, frontend.
+React Router	Lorem ipsum dolor sit amet, user routing.
+Ruby on Rails	Lorem ipsum dolor sit amet, backend.
+Axios	Lorem ipsum dolor sit amet, connect front to back.
 Express Router	Lorem ipsum dolor sit amet, consectetur.
 
 Client (Front End)
