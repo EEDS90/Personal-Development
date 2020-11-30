@@ -35,7 +35,7 @@ Express Router	Lorem ipsum dolor sit amet, consectetur.
 Client (Front End)
 
 # Wireframes
-https://whimsical.com/javascript-quiz-N1SwNNov79JumBxbL7oPac
+[wireframes](https://whimsical.com/personal-development-N1SwNNov79JumBxbL7oPac)
 
 Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 Dummy Link
