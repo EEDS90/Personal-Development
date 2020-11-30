@@ -60,10 +60,6 @@ Client (Front End)
 [flowchart](https://whimsical.com/personal-development-flowchart-3YAyMsimdfHDF76i79x4SJ)
 [draw.io](https://drive.google.com/file/d/1BX9k_1iGIckYufYBict2bPq5WYQC_Loy/view?usp=sharing)
 
-#### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
-
 #### Component Hierarchy
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
