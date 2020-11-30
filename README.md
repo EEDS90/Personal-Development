@@ -16,11 +16,12 @@ Personal Development
 
 # Goals
 
-Lorem ipsum, dolor sit amet,
-consectetur adipiscing elit.
-Phasellus dapibus fermentum risus vitae bibendum.
-Integer vel ipsum mollis odio sollicitudin ornare eu vel ex.
-etc.
+My goals for this app is to create a platform where users can answer some question that will provide a correct or incorrect response
+ans will give the user a better idea of how they can work on their personal development.
+
+This app  will also allow your peers to anonymously post a comment response to the questions:
+What do you really think about me?
+And how can I improve?
 
 # Libraries and Dependencies
 
