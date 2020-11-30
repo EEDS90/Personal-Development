@@ -27,10 +27,10 @@ And how can I improve?
 
 Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 Library	Description
-React	Lorem ipsum dolor sit amet, consectetur.
-React Router	Lorem ipsum dolor sit amet, consectetur.
-React SemanticUI	Lorem ipsum dolor sit amet, consectetur.
-Express	Lorem ipsum dolor sit amet, consectetur.
+React, Frontend.
+React Router, User routing.
+Ruby on Rails, Backend.
+Axios, makes the axios call for front and back.
 Express Router	Lorem ipsum dolor sit amet, consectetur.
 
 Client (Front End)
