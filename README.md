@@ -40,21 +40,6 @@ https://whimsical.com/javascript-quiz-N1SwNNov79JumBxbL7oPac
 Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 Dummy Link
 
-Desktop Landing
-Dummy Link
-
-Desktop Hero
-Dummy Link
-
-Resource Index
-Dummy Link
-
-Resource Show
-Dummy Link
-
-Tablet Resource Index
-Dummy Link
-
 Mobile Resource Index
 Component Tree
 
