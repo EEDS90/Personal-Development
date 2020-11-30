@@ -1,3 +1,19 @@
+Overview
+MVP
+Goals
+Libraries and Dependencies
+Client (Front End)
+Wireframes
+Component Tree
+Component Hierarchy
+Component Breakdown
+Time Estimates
+Server (Back End)
+ERD Model
+Post-MVP
+Code Showcase
+Code Issues & Resolutions
+
 # Overview
 
 This is a personal development app that will help the user develop themselves by asking a set of questions and providing a correct or incorrect response.
@@ -23,14 +39,14 @@ This app  will also allow your peers to anonymously post a comment response to t
 What do you really think about me?
 And how can I improve?
 
-# Libraries and Dependencies
+Libraries and Dependencies
 
 Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 Library	Description
-React, Frontend.
-React Router, User routing.
-Ruby on Rails, Backend.
-Axios, makes the axios call for front and back.
+React	Lorem ipsum dolor sit amet, consectetur.
+React Router	Lorem ipsum dolor sit amet, consectetur.
+React SemanticUI	Lorem ipsum dolor sit amet, consectetur.
+Express	Lorem ipsum dolor sit amet, consectetur.
 Express Router	Lorem ipsum dolor sit amet, consectetur.
 
 Client (Front End)
@@ -39,12 +55,6 @@ Client (Front End)
 [wireframes](https://whimsical.com/personal-development-N1SwNNov79JumBxbL7oPac)
 [flowchart](https://whimsical.com/personal-development-flowchart-3YAyMsimdfHDF76i79x4SJ)
 [draw.io](https://drive.google.com/file/d/1BX9k_1iGIckYufYBict2bPq5WYQC_Loy/view?usp=sharing)
-
-Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-Dummy Link
-
-Mobile Resource Index
-Component Tree
 
 Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components.
 Component Hierarchy
