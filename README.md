@@ -36,6 +36,8 @@ Client (Front End)
 
 # Wireframes
 [wireframes](https://whimsical.com/personal-development-N1SwNNov79JumBxbL7oPac)
+[flowchart](https://whimsical.com/personal-development-flowchart-3YAyMsimdfHDF76i79x4SJ)
+[draw.io](https://drive.google.com/file/d/1BX9k_1iGIckYufYBict2bPq5WYQC_Loy/view?usp=sharing)
 
 Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 Dummy Link
