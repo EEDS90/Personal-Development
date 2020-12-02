@@ -55,7 +55,7 @@ export default function MainContainer(props) {
         <CommentEdit comments={comments} handleUpdate={handleUpdate} />
       </Route>
       <Route path='/comments/new'>
-        <CommentCreate handleCreate={handleCreate} />
+        <CommentCreate handleCreate={handleCreate} currentUser={props.currentUser} />
       </Route>
 
       <Route path='/comments/:id'>

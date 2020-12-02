@@ -1,9 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 
 export default function CommentCreate(props) {
   const [formData, setFormData] = useState({
-    name: ''
+    comment: '', 
+    user_id: '',
+    question_id: '',
   })
+
+  useEffect(() => {
+    const { id } = props.currentUser
+    setFormData(prevState => ({
+      ...prevState,
+      user_id: id
+  }))
+  },[])
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +33,7 @@ export default function CommentCreate(props) {
       <label>Name:
         <input
           type='text'
-          name='name'
+          name='comment'
           value={formData.name}
           onChange={handleChange}
         />
