@@ -5,7 +5,7 @@ export const getAllQuestions = async () => {
   return resp.data;
 }
 
-export const addQuestions = async (questionId, questionId) => {
-  const resp = await api.put(`/flavors/${questionId}/questions/${questionId}`);
+export const addQuestion = async (questionId, commentId) => {
+  const resp = await api.put(`/questions/${questionId}/comments/${commentId}`);
   return resp.data;
 }

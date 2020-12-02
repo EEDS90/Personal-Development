@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 
 import Questions from '../screens/Questions';
-import CommentCreate from '../screens/commentCreate';
+import CommentCreate from '../screens/CommentCreate';
 import CommentDetail from '../screens/CommentDetail';
 import CommentEdit from '../screens/CommentEdit';
 import Comments from '../screens/Comments';
-import { getAllQuestions } from '../services/Questions'
+import { getAllQuestions } from '../services/questions'
 import { destroyComment, getAllComments, postComment, putComment } from '../services/comments'
 
 export default function MainContainer(props) {

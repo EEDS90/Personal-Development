@@ -9,7 +9,7 @@ export default function CommentEdit(props) {
 
   useEffect(() => {
     const prefillForm = () => {
-      const commentText = props.comments.find(comment => comments.id === Number(id));
+      const commentItem = props.comments.find(comment => comment.id === Number(id));
       setFormData({
         name: commentItem.name
       })

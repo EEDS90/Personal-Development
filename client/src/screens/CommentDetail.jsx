@@ -11,7 +11,7 @@ export default function CommentDetail(props) {
 
 
   useEffect(() => {
-    const fetchcommentItem = async () => {
+    const fetchCommentItem = async () => {
       const commentData = await getOneComment(id);
       setCommentItem(commentData);
     }

@@ -1,6 +1,6 @@
 import api from './apiConfig';
 
-export const getAllcomments = async () => {
+export const getAllComments = async () => {
   const resp = await api.get('/comments');
   return resp.data;
 }
