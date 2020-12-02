@@ -6,7 +6,7 @@ export const getAllComments = async () => {
 }
 
 export const getOneComment = async (id) => {
-  const resp = await api.get(`/foods/${id}`);
+  const resp = await api.get(`/comments/${id}`);
   return resp.data;
 }
 

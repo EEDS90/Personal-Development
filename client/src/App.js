@@ -23,6 +23,7 @@ function App() {
   }, [])
 
   const handleLogin = async (loginData) => {
+    // debugger
     const userData = await loginUser(loginData);
     setCurrentUser(userData);
     history.push('/');
