@@ -16,7 +16,7 @@ useEffect(() => {
 }, []);
   return (
     <div>
-      <h3>Comments</h3>
+      <h3>What do you really think about me and how can I improve?</h3>
       {props.comments.map((comment) => (
         <React.Fragment key={comment.id}>
           <Link to={`/comments/${comment.id}`}>

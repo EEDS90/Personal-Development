@@ -29,7 +29,7 @@ export default function CommentCreate(props) {
       e.preventDefault();
       props.handleCreate(formData);
     }}>
-      <h3>Create Comment</h3>
+      <h3>What do you really think about me and how can I improve?</h3>
       <label>Name:
         <input
           type='text'
