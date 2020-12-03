@@ -71,27 +71,49 @@ export default function Questions() {
     },
   ];
 
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  const [showScore, setShowScore] = useState(false);
+
+  const [score, setScore] = useState(0);
+
+  const handleAnswerButtonClick = (isCorrect) => {
+    if (isCorrect === true) {
+      setScore(score + 1);
+    }
+
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      setShowScore(true);
+    }
+  };
+
   return (
     <div className="question">
-      {false ? (
+      {showScore ? (
         <div className="score_section">
-          {" "}
-          You have 1 point out of {questions.lenght}
+          You have {score} point out of {questions.length}
         </div>
       ) : (
         <>
           <div className="question-section">
             <div className="question-count">
-              <span>Question 1</span>/{questions.length}
+                <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
-            <div className="question_text">{questions[0].questionText}</div>
+            <div className="question_text">
+              {questions[currentQuestion].questionText}
+            </div>
           </div>
           <div className="answer_section">
-            <button>Answer1</button>
-            <button>Answer2</button>
-            <button>Answer3</button>
-            <button>Answer4</button>
-            <button>Answer5</button>
+            {questions[currentQuestion].answerOptions.map((answerOptions) => (
+              <button
+                onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}
+              >
+                {answerOptions.answerText}
+              </button>
+            ))}
           </div>
         </>
       )}
