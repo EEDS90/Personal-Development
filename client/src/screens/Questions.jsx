@@ -103,7 +103,7 @@ export default function Questions() {
                 <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className="question_text">
-              {questions[currentQuestion].questionText}
+              {questions[currentQuestion].questionsText}
             </div>
           </div>
           <div className="answer_section">

@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <div className="header">
       <ul className= 'header_item'>
-        <li className= 'title'>Personal Development</li>
+        <li className= 'title'>My Personal Legend</li>
 
         {currentUser ? (
           <>
