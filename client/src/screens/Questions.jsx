@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Questions.css";
 
 export default function Questions() {
   const questions = [
@@ -94,13 +95,13 @@ export default function Questions() {
     <div className="question">
       {showScore ? (
         <div className="score_section">
-          You have {score} point out of {questions.length}
+          You have {score} correct out of {questions.length}
         </div>
       ) : (
         <>
           <div className="question-section">
             <div className="question-count">
-                <span>Question {currentQuestion + 1}</span>/{questions.length}
+              <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className="question_text">
               {questions[currentQuestion].questionsText}
@@ -109,6 +110,7 @@ export default function Questions() {
           <div className="answer_section">
             {questions[currentQuestion].answerOptions.map((answerOptions) => (
               <button
+                className="button_questions"
                 onClick={() => handleAnswerButtonClick(answerOptions.isCorrect)}
               >
                 {answerOptions.answerText}
