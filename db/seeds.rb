@@ -12,11 +12,14 @@ User.destroy_all
 
 puts "#{User.count} users created"
 
+@question1 = Question.create!(question: 'Why')
+
+
 @Comment1 = Comment.create!(comment: 'Hello', user: @admin)
-@Comment2 = Comment.create!(comment: '')
-@Comment3 = Comment.create!(comment: '')
-@Comment4 = Comment.create!(comment: '')
-@Comment5 = Comment.create!(comment: '')
+@Comment2 = Comment.create!(comment: '', user: @admin)
+@Comment3 = Comment.create!(comment: '', user: @admin)
+@Comment4 = Comment.create!(comment: '', user: @admin)
+@Comment5 = Comment.create!(comment: '', user: @admin)
 
 puts "#{Comment.count} comments created"
 

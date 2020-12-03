@@ -34,7 +34,7 @@ export default function CommentCreate(props) {
         <input
           type='text'
           name='comment'
-          value={formData.name}
+          value={formData.comment}
           onChange={handleChange}
         />
       </label>
