@@ -35,12 +35,12 @@ export default function Header(props) {
           <div className="before_login">
             <li className="current_user">
               <button id="magic1">
-                <Link to="/login">Login</Link>
+                <Link to="/login">Sign In</Link>
               </button>
             </li>
             <li className="current_register">
               <button id="magic1">
-                <Link to="/register">Register</Link>
+                <Link to="/register">Sign Up</Link>
               </button>
             </li>
           </div>
@@ -50,12 +50,12 @@ export default function Header(props) {
           <>
             <li className="comment">
               <button id="magic1">
-                <Link to="/comments">comments</Link>
+                <Link to="/comments">Comments</Link>
               </button>
             </li>
             <li className="question">
               <button id="magic1">
-                <Link to="/questions">questions</Link>
+                <Link to="/questions">Take Quiz</Link>
               </button>
             </li>
           </>

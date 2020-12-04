@@ -1,4 +1,4 @@
-.loginBox {
+.registerBox {
   margin-top: 50px;
   background-color: white;
   border-radius: 6px;
@@ -9,6 +9,12 @@
 }
 
 .username_one{
+  border-radius: 6px;
+  padding: 8px 38px;
+  margin-bottom: 03px;
+}
+
+.email {
   border-radius: 6px;
   padding: 8px 38px;
   margin-bottom: 03px;

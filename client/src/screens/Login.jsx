@@ -23,37 +23,37 @@ export default function Login(props) {
       }}
     >
       <div className="loginBox">
-        <h3>Welcome</h3>
-        <div className="username">
-          <label>
-            
-            <input className="username_one"
-              type="text"
-              name="username"
-              placeholder="Username"
-              value={formData.username}
-              onChange={handleChange}
-            />
-          </label>
-        </div>
+        <h3>Hello</h3>
+
+        <label>
+          <input
+            className="username_one"
+            type="text"
+            name="username"
+            placeholder="Username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+        </label>
+
         <br />
-         
-          <label>
-            
-            <input className="password_one"
-              type="password"
+
+        <label>
+          <input
+            className="password_one"
+            type="password"
             name="password"
             placeholder="password"
-              value={formData.password}
-              onChange={handleChange}
-            />
-          </label>
-        
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </label>
+
         <br />
-      
-        <button className="submit_button">Log In</button>
+
+        <button className="submit_button">Sign In</button>
         <h4>Forgot Password?</h4>
-        </div>
+      </div>
     </form>
   );
 }
