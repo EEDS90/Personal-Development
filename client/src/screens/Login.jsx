@@ -23,7 +23,7 @@ export default function Login(props) {
       }}
     >
       <div className="loginBox">
-        <h3>Login</h3>
+        <h3>Welcome</h3>
         <div className="username">
           <label>
             
@@ -51,7 +51,8 @@ export default function Login(props) {
         
         <br />
       
-        <button className="submit_button">Submit</button>
+        <button className="submit_button">Log In</button>
+        <h4>Forgot Password?</h4>
         </div>
     </form>
   );
