@@ -99,8 +99,8 @@ export default function Questions() {
         </div>
       ) : (
         <>
-          <div className="question-section">
-            <div className="question-count">
+          <div className="question_section">
+            <div className="question_count">
               <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className="question_text">
