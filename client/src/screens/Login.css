@@ -5,7 +5,8 @@
   border-color: #000000;
   box-shadow: 2px 2px 6px grey;
   justify-content: center;
-  
+  margin: 0 auto;
+  width: 250px;
 }
 
 .username_one{

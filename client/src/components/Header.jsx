@@ -6,7 +6,7 @@ export default function Header(props) {
   const { currentUser, handleLogout } = props;
   return (
     <div className="header">
-      <ul className="header_item">
+      <ul className="header-item">
         <li className="title">My Personal Legend</li>
 
         {currentUser ? (
@@ -19,29 +19,29 @@ export default function Header(props) {
             </li>
 
             <li className="home">
-              <button id="magic1">
-                <Link to="/">Home</Link>
-              </button>
+              <Link to="/">
+                {" "}
+                <a> Home</a>
+              </Link>
             </li>
 
             <li className="about">
-              <button id="magic1">
-                <Link to="/">About</Link>
-              </button>
+              <Link to="/">
+                <a>About</a>
+              </Link>
             </li>
-
           </>
         ) : (
           <div className="before_login">
             <li className="current_user">
-              <button id="magic1">
-                <Link to="/login">Sign In</Link>
-              </button>
+              <Link to="/login">
+                <a>Sign In</a>
+              </Link>
             </li>
             <li className="current_register">
-              <button id="magic1">
-                <Link to="/register">Sign Up</Link>
-              </button>
+              <Link to="/register">
+                <a>Sign Up</a>
+              </Link>
             </li>
           </div>
         )}
@@ -49,14 +49,14 @@ export default function Header(props) {
         {currentUser && (
           <>
             <li className="comment">
-              <button id="magic1">
-                <Link to="/comments">Comments</Link>
-              </button>
+              <Link to="/comments">
+                <a>Comments</a>
+              </Link>
             </li>
-            <li className="question">
-              <button id="magic1">
-                <Link to="/questions">Take Quiz</Link>
-              </button>
+            <li>
+              <Link to="/questions">
+                <a>Take Quiz</a>
+              </Link>
             </li>
           </>
         )}

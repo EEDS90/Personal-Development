@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import "./CommentCreate.css";
 
 export default function CommentCreate(props) {
   const [formData, setFormData] = useState({
@@ -30,15 +30,19 @@ export default function CommentCreate(props) {
       props.handleCreate(formData);
     }}>
       <h3>What do you really think about me and how can I improve?</h3>
-      <label>Name:
-        <input
+      <div className="comment-container">
+        <div className="comment-1">
+      <label>
+        <input className = 'text'
           type='text'
           name='comment'
           value={formData.comment}
           onChange={handleChange}
         />
       </label>
-      <button>Submit</button>
+          <button className="create-button2">Create</button>
+          </div>
+        </div>
     </form>
   )
 }

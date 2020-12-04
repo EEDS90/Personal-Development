@@ -6,8 +6,21 @@
   color: red;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
 
-.header_item {
+a:hover {
+  color: red;
+}
+
+.header-item {
   background-color: black;
   list-style-type: none;
   margin: 0;
@@ -25,19 +38,17 @@
   color: white;
 }
 
+.questions {
+  text-align: center;
+}
+
 .before_login {
   display: flex;
+  padding: 5%;
 }
 
 .current_user {
   margin-right: 8px;
-}
-
-#magic1 {
-  background-color: red;
-  border-radius: 5px;
-  margin-top: 20px;
-  
 }
 
 .current_logout {
@@ -47,7 +58,6 @@
 }
 
 .magic2 {
-  background-color: red;
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 5px;

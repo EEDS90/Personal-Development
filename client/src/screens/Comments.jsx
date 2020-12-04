@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {  getAllComments } from "../services/comments.js";
-
+import "./Comments.css";
 
 export default function Comments(props) {
   
@@ -16,7 +16,9 @@ useEffect(() => {
 }, []);
   return (
     <div>
+      <ul className="comment-container1">
       <h3>What do you really think about me and how can I improve?</h3>
+      
       {props.comments.map((comment) => (
         <React.Fragment key={comment.id}>
           <Link to={`/comments/${comment.id}`}>
@@ -39,8 +41,9 @@ useEffect(() => {
       ))}
       <br />
       <Link to="/comments/new">
-        <button>Create</button>
-      </Link>
+        <button className= "comment-button">Comment</button>
+        </Link>
+        </ul>
     </div>
   );
 }
