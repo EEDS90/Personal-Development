@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <div className="header">
       <ul className="header-item">
-        <li className="title">My Personal Legend</li>
+        <li className="title">iAlchemy</li>
 
         {currentUser ? (
           <>

@@ -13,37 +13,45 @@ export default function Comments(props) {
     };
     fetchComments();
   }, []);
+  console.log(comments);
+
   return (
     <div>
       <h3>What do you really think about me and how can I improve?</h3>
 
       <div className="comments-topic">
         {props.comments.map((comment) => (
-          <React.Fragment key={comment.id}>
-            <Link to={`/comments/${comment.id}`}>
+          <div key={comment.id}>
+            {/* <Link to={`/comments/${comment.id}`}>
               <p>{comment.name}</p>
-            </Link>
+              <p>{comment.comment}</p>
+            </Link> */}
 
             {comment.user_id === props.currentUser?.id && (
               <>
-                <Link to={`/comments/${comment.id}/edit`}>
-                  <button>Edit</button>
-                </Link>
-                <button onClick={() => props.handleDelete(comment.id)}>
-                  Delete
-                </button>
-                {comments.map((comment) => (
+                <div>
                   <p>{comment.comment}</p>
-                ))}
+                  <div className="buttons-crud">
+                    <Link to={`/comments/${comment.id}/edit`}>
+                      <button className="edit-button">Edit</button>
+                    </Link>
+
+                    <button className="delete-button1" onClick={() => props.handleDelete(comment.id)}>
+                      Delete
+                    </button>
+                  </div>
+                </div>
               </>
             )}
-          </React.Fragment>
+          </div>
         ))}
+
         <br />
+
+        <Link to="/comments/new">
+          <button className="comment-button">Comment</button>
+        </Link>
       </div>
-      <Link to="/comments/new">
-        <button className="comment-button">Comment</button>
-      </Link>
     </div>
   );
 }

@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 export default function CommentEdit(props) {
   const [formData, setFormData] = useState({
     name: "",
   });
+
+  const {comment} = formData
   const { id } = useParams();
 
   useEffect(() => {
@@ -12,21 +14,24 @@ export default function CommentEdit(props) {
       const commentItem = props.comments.find(
         (comment) => comment.id === Number(id)
       );
+      console.log(commentItem)
       setFormData({
-        name: commentItem.name,
+        name: commentItem.comment,
       });
     };
     if (props.comments.length) {
       prefillForm();
     }
   }, [props.comments]);
-
+  console.log(props.comments)
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+    const editData = { [name]: value }
+    setFormData((formData) => {
+      return { ...formData, ...editData }
+      
+    });
   };
 
   return (
@@ -40,10 +45,10 @@ export default function CommentEdit(props) {
       <div className="comment-container">
         <div className="comment-1">
           <label>
-            <input className = 'text'
+            <input className= 'text'
               type="text"
               name="name"
-              value={formData.name}
+              value={comment}
               onChange={handleChange}
             />
           </label>
