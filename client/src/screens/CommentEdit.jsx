@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 export default function CommentEdit(props) {
   const [formData, setFormData] = useState({
-    name: "",
+    comment: "",
   });
 
   const {comment} = formData
@@ -16,7 +16,7 @@ export default function CommentEdit(props) {
       );
       console.log(commentItem)
       setFormData({
-        name: commentItem.comment,
+        comment: commentItem.comment,
       });
     };
     if (props.comments.length) {
@@ -47,7 +47,7 @@ export default function CommentEdit(props) {
           <label>
             <input className= 'text'
               type="text"
-              name="name"
+              name="comment"
               value={comment}
               onChange={handleChange}
             />
