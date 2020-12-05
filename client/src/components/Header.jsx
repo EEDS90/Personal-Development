@@ -11,12 +11,7 @@ export default function Header(props) {
 
         {currentUser ? (
           <>
-            <li className="current_logout">
-              <p>{currentUser.username}</p>
-              <button className="magic2" onClick={handleLogout}>
-                Logout
-              </button>
-            </li>
+        
 
             <li className="home">
               <Link to="/">
@@ -57,6 +52,13 @@ export default function Header(props) {
               <Link to="/questions">
                 <a>Take Quiz</a>
               </Link>
+            </li>
+
+            <li className="current_logout">
+              <p>{currentUser.username}</p>
+              <button className="magic2" onClick={handleLogout}>
+                Logout
+              </button>
             </li>
           </>
         )}

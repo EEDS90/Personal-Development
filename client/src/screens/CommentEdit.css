@@ -1,4 +1,4 @@
-.comments-topic {
+.comment-container {
   display: grid;
   grid-template-columns: 20% 33% 20%;
   grid-template-rows: min-content auto min-content;
@@ -10,7 +10,16 @@
   background-color: white;
 }
 
-.comment-button {
-  margin: 0 auto;
+.comment-1 {
+padding: 30px;
+margin: 0 auto;
+}
+
+.text {
+  padding: 60px;
+}
+
+.create-button2 {
+  margin-top: 20px;
   border-radius: 6px;
 }

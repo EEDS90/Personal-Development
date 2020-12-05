@@ -1,47 +1,55 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export default function CommentEdit(props) {
   const [formData, setFormData] = useState({
-    name: ''
-  })
+    name: "",
+  });
   const { id } = useParams();
 
   useEffect(() => {
     const prefillForm = () => {
-      const commentItem = props.comments.find(comment => comment.id === Number(id));
+      const commentItem = props.comments.find(
+        (comment) => comment.id === Number(id)
+      );
       setFormData({
-        name: commentItem.name
-      })
-    }
-    if (props.comments.length){
+        name: commentItem.name,
+      });
+    };
+    if (props.comments.length) {
       prefillForm();
     }
-  }, [props.comments])
+  }, [props.comments]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
-    }))
-  }
+      [name]: value,
+    }));
+  };
 
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault();
-      props.handleUpdate(id, formData);
-    }}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        props.handleUpdate(id, formData);
+      }}
+    >
       <h3>Edit Comment</h3>
-      <label>Name:
-        <input
-          type='text'
-          name='name'
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </label>
-      <button>Submit</button>
+      <div className="comment-container">
+        <div className="comment-1">
+          <label>
+            <input className = 'text'
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </label>
+          <button className="create-button2">Update</button>
+        </div>
+      </div>
     </form>
-  )
+  );
 }
