@@ -23,7 +23,7 @@ export default function Header(props) {
 
             <li className="about">
               <Link to="/">
-                <a>About</a>
+                <a>About Us</a>
               </Link>
             </li>
           </>
