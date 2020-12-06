@@ -6,7 +6,8 @@ import Journey from "../assets/Journey.jpeg";
 export default function Header(props) {
   const { currentUser, handleLogout } = props;
   return (
-    <div className="header">
+    <div className="main-container">
+      <div className="header">
       <div className="title">iAlchemy</div>
       <hr />
       <ul className="header-item">
@@ -68,7 +69,17 @@ export default function Header(props) {
         
       </ul>
       
-      <div style={{ backgroundImage: `url(${Journey})` }}></div>
+      {/* <div style={{ backgroundImage: `url(${Journey})` }}></div> */}
+      
+      </div>
+      <div className="image">
+        <p>Everything You Need to Know to Improve Your Life</p>
+
+        <div>
+          <img id="image1" src="/assets2/Journey.jpeg"/>
+        </div>
+        </div>
     </div>
+    
   );
 }
