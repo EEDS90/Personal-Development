@@ -6,8 +6,8 @@ export default function AboutUs() {
   return (
     <div className="container">
       <center>
-        <h1>Our Mission</h1>
-
+        <h1 className="mission">Our Mission</h1>
+        <hr />
         <p>
           Maximizing your highest potential as a human being requires a very
           subtle alchemy. 
