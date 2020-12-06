@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Questions.css";
+import Books2 from "../assets/Books2.jpeg"
 
 export default function Questions() {
   const questions = [
@@ -92,7 +93,7 @@ export default function Questions() {
   };
 
   return (
-    <div className="question">
+    <div className="question" style={{backgroundImage: `url(${Books2})`}}>
       {showScore ? (
         <div className="score_section">
           You have {score} correct out of {questions.length}

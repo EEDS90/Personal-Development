@@ -8,13 +8,22 @@
   margin: 0 auto;
   width: 60%;
   height: 60%;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
   justify-content: center;
-  background-color: white;
+  background-color: rgba(240,248,255,.3);
+  backdrop-filter: blur(8px);
 }
 
 .comment4 {
   box-shadow: 4px 4px 6px 0;
-  height: 100px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.comment3 {
+  padding: 20px;
 }
 
 .buttons-crud{

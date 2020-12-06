@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAllComments } from "../services/comments.js";
 import "./Comments.css";
+import Books from "../assets/Books.jpeg"
+
 
 export default function Comments(props) {
   const [comments, setComments] = useState([]);
@@ -16,7 +18,8 @@ export default function Comments(props) {
   console.log(comments);
 
   return (
-    <div>
+    <div style={{backgroundImage: `url(${Books})`}}>
+      
       <h3>What do you really think about me and how can I improve?</h3>
 
       <div className="comments-topic">
@@ -24,9 +27,9 @@ export default function Comments(props) {
           <div key={comment.id}>
             {comment.user_id === props.currentUser?.id && (
               <>
-                <div>
-                  <div className="comment4">
-                    <p>{comment.comment}</p>
+                <div className="comment4">
+                  <div >
+                    <p className="comment3">{comment.comment}</p>
                   </div>
                   <div className="buttons-crud">
                     <Link to={`/comments/${comment.id}/edit`}>
