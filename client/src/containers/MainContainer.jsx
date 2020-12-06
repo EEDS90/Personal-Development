@@ -8,6 +8,7 @@ import CommentEdit from '../screens/CommentEdit';
 import Comments from '../screens/Comments';
 import { getAllQuestions } from '../services/questions'
 import { destroyComment, getAllComments, postComment, putComment } from '../services/comments'
+import AboutUs from '../screens/AboutUs';
 
 export default function MainContainer(props) {
   const [questions, setQuestions] = useState([]);
@@ -61,6 +62,11 @@ export default function MainContainer(props) {
       <Route path='/comments/:id'>
         <CommentDetail questions={questions} />
       </Route>
+
+      <Route path='/AboutUs'>
+        <AboutUs />
+      </Route>
+
       <Route path='/comments'>
         <Comments
           comments={comments}
