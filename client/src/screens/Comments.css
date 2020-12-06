@@ -16,6 +16,11 @@
   backdrop-filter: blur(8px);
 }
 
+.question {
+  color: rgb(255, 0, 0);
+  justify-content: center;font-weight: 700;
+  font-size: 30px;
+}
 .comment4 {
   box-shadow: 4px 4px 6px 0;
   height: 150px;

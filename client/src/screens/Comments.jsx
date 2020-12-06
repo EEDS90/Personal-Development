@@ -19,9 +19,9 @@ export default function Comments(props) {
 
   return (
     <div style={{backgroundImage: `url(${Books})`}}>
-      
+      <div className="question">
       <h3>What do you really think about me and how can I improve?</h3>
-
+      </div>
       <div className="comments-topic">
         {props.comments.map((comment) => (
           <div key={comment.id}>
