@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAllComments } from "../services/comments.js";
 import "./Comments.css";
-import Books from "../assets/Books.jpeg"
-
+import Books from "../assets/Books.jpeg";
 
 export default function Comments(props) {
   const [comments, setComments] = useState([]);
@@ -18,9 +17,9 @@ export default function Comments(props) {
   console.log(comments);
 
   return (
-    <div style={{backgroundImage: `url(${Books})`}}>
+    <div style={{ backgroundImage: `url(${Books})` }}>
       <div className="question">
-      <h3>What do you really think about me and how can I improve?</h3>
+        <h3>What do you really think about me and how can I improve?</h3>
       </div>
       <div className="comments-topic">
         {props.comments.map((comment) => (
@@ -28,20 +27,20 @@ export default function Comments(props) {
             {comment.user_id === props.currentUser?.id && (
               <>
                 <div className="comment4">
-                  <div >
+                  <div>
                     <p className="comment3">{comment.comment}</p>
                   </div>
                   <div className="buttons-crud">
-                    <Link to={`/comments/${comment.id}/edit`}>
-                      <button id="edit-button">Edit</button>
-                    </Link>
-
-                    <button
-                      id="del-button"
-                      onClick={() => props.handleDelete(comment.id)}
-                    >
-                      Delete
-                    </button>
+                    <div className="edit-button">
+                      <Link to={`/comments/${comment.id}/edit`}>
+                        <button>Edit</button>
+                      </Link>
+                    </div>
+                    <div className="delete">
+                      <button onClick={() => props.handleDelete(comment.id)}>
+                        Delete
+                      </button>
+                    </div>
                   </div>
                 </div>
               </>

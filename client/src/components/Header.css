@@ -7,13 +7,13 @@
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100px;
-  height: 50px;
+  height: 130px;
 }
 
 a:hover {
@@ -21,21 +21,23 @@ a:hover {
 }
 
 .header-item {
-  background-color: black;
   list-style-type: none;
   margin: 0;
   display: flex;
   justify-content: space-between;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  /* padding-top: -20px;
+  padding-bottom: 0px; */
 }
 
 .title {
   width: 10rem;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 80px;
+  justify-content: center;
   margin-top: 10px;
   color: rgb(255, 0, 0);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  
 }
 
 .questions {
@@ -61,4 +63,6 @@ a:hover {
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: -55%;
+  text-decoration: none;
 }

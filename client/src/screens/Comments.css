@@ -35,18 +35,18 @@
   display: flex ;
   flex-direction: row;
   justify-content: center;
-  
+  /* margin: 0 auto; */
 }
 
-#edit-button {
+.edit-button {
+  margin-top: -54px;
   display: flex ;
   flex-direction: row;
-  padding: 14px;
-  border-radius: 10px;
-  
+  border-radius: 1rem;
 }
-#del-button {
-  border-radius: 10px;
+
+.delete {
+  border-radius: 6px;
 }
 
 .comment-button {

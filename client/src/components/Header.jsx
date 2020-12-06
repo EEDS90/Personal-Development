@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import Journey from "../assets/Journey.jpeg";
 
 export default function Header(props) {
   const { currentUser, handleLogout } = props;
   return (
     <div className="header">
+      <div className="title">iAlchemy</div>
+      <hr />
       <ul className="header-item">
-        <li className="title">iAlchemy</li>
+        
 
         {currentUser ? (
           <>
-        
-
             <li className="home">
               <Link to="/">
                 {" "}
@@ -40,7 +41,7 @@ export default function Header(props) {
             </li>
           </div>
         )}
-        {/* <hr /> */}
+        
         {currentUser && (
           <>
             <li className="comment">
@@ -63,6 +64,7 @@ export default function Header(props) {
           </>
         )}
       </ul>
+      <div style={{ backgroundImage: `url(${Journey})` }}></div>
     </div>
   );
 }
