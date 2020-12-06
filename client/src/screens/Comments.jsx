@@ -22,21 +22,21 @@ export default function Comments(props) {
       <div className="comments-topic">
         {props.comments.map((comment) => (
           <div key={comment.id}>
-            {/* <Link to={`/comments/${comment.id}`}>
-              <p>{comment.name}</p>
-              <p>{comment.comment}</p>
-            </Link> */}
-
             {comment.user_id === props.currentUser?.id && (
               <>
                 <div>
-                  <p>{comment.comment}</p>
+                  <div className="comment4">
+                    <p>{comment.comment}</p>
+                  </div>
                   <div className="buttons-crud">
                     <Link to={`/comments/${comment.id}/edit`}>
-                      <button className="edit-button">Edit</button>
+                      <button id="edit-button">Edit</button>
                     </Link>
 
-                    <button className="delete-button1" onClick={() => props.handleDelete(comment.id)}>
+                    <button
+                      id="del-button"
+                      onClick={() => props.handleDelete(comment.id)}
+                    >
                       Delete
                     </button>
                   </div>
@@ -47,10 +47,11 @@ export default function Comments(props) {
         ))}
 
         <br />
-
-        <Link to="/comments/new">
-          <button className="comment-button">Comment</button>
-        </Link>
+        <div className="comment-button">
+          <Link to="/comments/new">
+            <button className="comment-button">Comment</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
