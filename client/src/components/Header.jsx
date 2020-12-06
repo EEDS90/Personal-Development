@@ -58,12 +58,16 @@ export default function Header(props) {
             <li className="current_logout">
               <p>{currentUser.username}</p>
               <button className="magic2" onClick={handleLogout}>
-                Logout
+                Sign Out
               </button>
+              
             </li>
+            
           </>
         )}
+        
       </ul>
+      
       <div style={{ backgroundImage: `url(${Journey})` }}></div>
     </div>
   );
