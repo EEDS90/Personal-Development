@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 760px) {
+  .App {
+    font-size: 1.5rem;
+  }
+  .Appname{
+    font-size: 5rem;
+  }
+  .slogan{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .Appname {
+    font-size: 2rem;
+  }
+  .Appname{
+    font-size: 5rem;
+  }
+  .slogan{
+    font-size: 2rem;
+  }
+}
